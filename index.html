@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Board</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- HEADER -->
+    <header id="header">
+      <h1 contenteditable="true">My Daily Pinterest To Do List</h1>
+      <p contenteditable="true">Actioning my Pinterest Board to my life</p>
+    </header>
+
+    <!-- THEME CONTROLS -->
+    <section id="theme-controls">
+      <button data-theme="soft">Soft</button>
+      <button data-theme="strong">Strong</button>
+    </section>
+
+    <!-- BOARD -->
+    <main id="board">
+
+      <!-- MINDSET -->
+      <section class="card" data-card="mindset">
+        <h2 contenteditable="true">Mindset of the Day</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="Quote, belief, or mindset shift">
+      </section>
+
+      <!-- OUTFIT -->
+      <section class="card" data-card="outfit">
+        <h2 contenteditable="true">Outfit of the Day</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="Optional note">
+      </section>
+
+      <!-- WORK -->
+      <section class="card" data-card="work">
+        <h2 contenteditable="true">Work of the Day</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="One concrete action">
+      </section>
+
+      <!-- HABIT / HOBBY -->
+      <section class="card" data-card="habit">
+        <h2 contenteditable="true">Habit / Hobby</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="What will you do?">
+      </section>
+
+      <!-- MEAL -->
+      <section class="card" data-card="meal">
+        <h2 contenteditable="true">Meal of the Day</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="Meal intention or reminder">
+      </section>
+
+      <!-- GOAL -->
+      <section class="card" data-card="goal">
+        <h2 contenteditable="true">Goal of the Day</h2>
+
+        <div class="image-box">
+          <img src="" alt="">
+        </div>
+
+        <input type="file" accept="image/*">
+        <input type="text" placeholder="The one thing that matters">
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p contenteditable="true">Editable footer text</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
