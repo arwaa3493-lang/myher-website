@@ -55,18 +55,19 @@ body {
 #board {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
+  gap: 20px;
+  grid-auto-flow: dense;
 }
+
 
 /* ===== CARD ===== */
 .card {
   background: #ffffff;
-  padding: 14px;
+  padding: 12px;
   border-radius: 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
 /* ===== CARD TITLE ===== */
@@ -78,7 +79,7 @@ body {
 /* ===== IMAGE BOX ===== */
 .image-box {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
   background: #e5e5e5;
   border-radius: 12px;
   display: flex;
