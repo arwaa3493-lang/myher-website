@@ -1,15 +1,16 @@
+
 // ===== IMAGE UPLOAD PREVIEW =====
-document.querySelectorAll('.image-box input[type="file"]').forEach(input => {
-  input.addEventListener('change', function () {
-    const file = this.files[0];
+document.querySelectorAll('.image-box').forEach(box => {
+  const input = box.querySelector('input[type="file"]');
+  const img = box.querySelector('img');
+  const placeholder = box.querySelector('.placeholder-text');
+
+  input.addEventListener('change', () => {
+    const file = input.files[0];
     if (!file) return;
 
-    const imageBox = this.closest('.image-box');
-    const img = imageBox.querySelector('img');
-    const placeholder = imageBox.querySelector('.placeholder-text');
-
     const reader = new FileReader();
-    reader.onload = function (e) {
+    reader.onload = e => {
       img.src = e.target.result;
       img.style.display = 'block';
       if (placeholder) placeholder.style.display = 'none';
@@ -20,9 +21,7 @@ document.querySelectorAll('.image-box input[type="file"]').forEach(input => {
 });
 
 // ===== THEME TOGGLE =====
-const themeButtons = document.querySelectorAll('#theme-controls button');
-
-themeButtons.forEach(button => {
+document.querySelectorAll('#theme-controls button').forEach(button => {
   button.addEventListener('click', () => {
     const theme = button.dataset.theme;
 
@@ -30,3 +29,4 @@ themeButtons.forEach(button => {
     document.body.classList.add(theme);
   });
 });
+
