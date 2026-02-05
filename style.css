@@ -125,17 +125,40 @@ body.soft {
 }
 
 body.strong {
-  background: #1a1a1a;
   color: #f2f2f2;
-}
 
+  background-color: #141414;
+
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.04) 1px, transparent 1px),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.02) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255,255,255,0.02) 50%,
+      rgba(255,255,255,0.02) 75%,
+      transparent 75%,
+      transparent
+    );
+
+  background-size:
+    60px 60px,
+    80px 80px,
+    120px 120px;
+}
 body.strong .card {
-  background: #2a2a2a;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(2px);
 }
 
 body.strong input,
 body.strong button {
-  background: #333;
-  color: #fff;
-  border-color: #555;
+  background: #222;
+  color: #f2f2f2;
+  border-color: #444;
 }
+
+
+
