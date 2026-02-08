@@ -1,5 +1,4 @@
-console.log('js is working')
-// ===== IMAGE UPLOAD PREVIEW =====
+console.log("js is working")
 document.querySelectorAll('.image-box').forEach(box => {
   const input = box.querySelector('input[type="file"]');
   const img = box.querySelector('img');
