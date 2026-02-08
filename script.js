@@ -1,4 +1,4 @@
-
+consle.log('js is working')
 // ===== IMAGE UPLOAD PREVIEW =====
 document.querySelectorAll('.image-box').forEach(box => {
   const input = box.querySelector('input[type="file"]');
