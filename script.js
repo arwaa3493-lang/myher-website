@@ -5,7 +5,7 @@ document.querySelectorAll('.image-box').forEach(box => {
   const img = box.querySelector('img');
   const placeholder = box.querySelector('.placeholder-text');
 
-  input.addEventListener('change', () => {
+  lable.addEventListener('change', () => {
     const file = input.files[0];
     if (!file) return;
 
