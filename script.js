@@ -1,24 +1,3 @@
-
-// =====================
-// THEME SWITCHING
-// =====================
-const themeButtons = document.querySelectorAll("#theme-controls button");
-const app = document.getElementById("app");
-
-themeButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const theme = button.dataset.theme;
-    app.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  });
-});
-
-// Restore theme
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme) {
-  app.setAttribute("data-theme", savedTheme);
-}
-
 // =====================
 // IMAGE UPLOAD HANDLING
 // =====================
