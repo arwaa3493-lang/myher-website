@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif;
+  font-family: Times New Roman;
 }
 
 /* ===== PAGE ===== */
 body {
-  background: #7a1f2b;
+  background: #800020;
   color: #111;
 }
 
