@@ -8,7 +8,7 @@
 
 /* ===== PAGE ===== */
 body {
-  background: #F5F0E6;
+  background: #1E1E1E;
   color: #111;
 }
 
@@ -46,7 +46,7 @@ body {
 
 /* ===== CARD ===== */
 .card {
-  background: #ffffff;
+  background: #C9A227;
   padding: 12px;
   border-radius: 14px;
   display: flex;
