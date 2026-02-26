@@ -1,5 +1,6 @@
 /* ===== RESET ===== */
 * {
+  color: white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +9,7 @@
 
 /* ===== PAGE ===== */
 body {
-  background: #1E1E1E;
+  background: #5C1A1B;
   color: #111;
 }
 
