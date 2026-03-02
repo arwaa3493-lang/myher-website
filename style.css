@@ -9,7 +9,7 @@
 
 /* ===== PAGE ===== */
 body {
-  background: #5C1A1B;
+  background: #1e1e1e;
   color: #111;
 }
 
@@ -47,7 +47,7 @@ body {
 
 /* ===== CARD ===== */
 .card {
-  background: #C9A227;
+  background: white;
   padding: 12px;
   border-radius: 14px;
   display: flex;
